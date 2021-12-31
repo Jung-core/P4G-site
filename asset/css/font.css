@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/******본고딕****/
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Thin.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Thin.woff') format('woff'),
+         url('fonts/NotoSansKR-Thin.otf') format('otf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Light.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Light.woff') format('woff'),
+         url('fonts/NotoSansKR-Light.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Regular.woff') format('woff'),
+         url('fonts/NotoSansKR-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Medium.woff') format('woff'),
+         url('fonts/NotoSansKR-Medium.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Bold.woff') format('woff'),
+         url('fonts/NotoSansKR-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*MICE*/
+@font-face{
+    font-family:'MICE';
+    src: url('fonts/MICEGothic.woff2') format('woff2'),
+         url('fonts/MICEGothic.woff') format('woff'),
+         url('fonts/MICEGothic.otf') format('otf');
+    font-weight: 300;
+    font-style: normal; 
+}
+
+@font-face{
+    font-family:'MICE';
+    src: url('fonts/MICEGothicBold.woff2') format('woff2'),
+         url('fonts/MICEGothicBold.woff') format('woff'),
+         url('fonts/MICEGothicBold.otf') format('otf');
+    font-weight: 500;
+    font-style: normal; 
+}
+
+/* MontserratRegular */
+@font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/MontserratRegular.eot'); /* IE9 Compat Modes */
+    src: local('MontserratRegular'), local('MontserratRegular'),
+         url('fonts/MontserratRegular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/MontserratRegular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/MontserratRegular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/MontserratRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/MontserratRegular.svg') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Montserrat-Bold.eot'); /* IE9 Compat Modes */
+    src: local('MontserratRegular'), local('MontserratRegular'),
+         url('fonts/Montserrat-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Montserrat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Montserrat-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Montserrat-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Montserrat-Bold.svg') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/Montserrat-Black.eot'); /* IE9 Compat Modes */
+    src: local('MontserratRegular'), local('MontserratRegular'),
+         url('fonts/Montserrat-Black?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Montserrat-Black.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Montserrat-Black.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Montserrat-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Montserrat-Black.svg') format('svg'); /* Legacy iOS */
+  }
+
+ /* Circular Std */
+@font-face {
+    font-family: 'Circular';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/circularstd.eot'); /* IE9 Compat Modes */
+    src: local('Circular'), local('Circular'),
+         url('fonts/circularstd?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/circularstd.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/circularstd.woff') format('woff'), /* Modern Browsers */
+         url('fonts/circularstd.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/circularstd.svg') format('svg'); /* Legacy iOS */
+  }
+
+@font-face {
+    font-family: 'Circular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/CircularStd-Medium.eot'); /* IE9 Compat Modes */
+    src: local('Circular'), local('Circular'),
+         url('fonts/CircularStd-Medium?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/CircularStd-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/CircularStd-Medium.woff') format('woff'), /* Modern Browsers */
+         url('fonts/CircularStd-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/CircularStd-Medium.svg') format('svg'); /* Legacy iOS */
+  }
+
+@font-face {
+    font-family: 'Circular';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/CircularStd-Bold.eot'); /* IE9 Compat Modes */
+    src: local('Circular'), local('Circular'),
+         url('fonts/CircularStd-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/CircularStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/CircularStd-Bold.woff') format('woff'), /* Modern Browsers */
+         url('fonts/CircularStd-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/CircularStd-Bold.svg') format('svg'); /* Legacy iOS */
+  }
+
+  
+
+

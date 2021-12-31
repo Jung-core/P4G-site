@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<link rel="icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>P4G 리스트</title>
+	<style type="text/css">
+		html, body { margin: 0; padding: 0; }
+		ul, li { padding: 0; margin: 0; list-style: none; }
+		body, td { color: #6b6b6b; font-style: normal; font-variant: normal; font-size: 12px; line-height: normal; font-family:dotum, 돋움, Sans-Serif; }
+		table { margin-bottom: 150px; border-collapse: collapse; border-spacing: 0; }
+		#g_header h1 { height: 60px; line-height: 60px; padding-left: 28px; margin-top: 0; color: #fff; background: #424242; }
+		#g_body { padding: 0 30px; }
+		.guide_table { width: 100%; }
+		.guide_table thead th { background: #f1f1f1; padding:15px 3px; border: solid 1px #dadada; }
+		.guide_table tbody td { padding:8px 3px; border: solid 1px #dadada; }
+		.guide_table tbody td.filelink a { text-decoration: none; color: #0177bd; }
+		.guide_table tr.dep01 td { border-top: solid 2px #dadada; }
+		.guide_table td.filelink a {padding:0;}
+		.red { color: #ff0000; }
+		.nofile { background: #D9E3E6; font-weight: bold; text-align: center; }
+		#g_footer { padding: 30px; text-align: right; }
+		.eng td { background: #e3edec; }
+		.issue { font-size: 11px; font-family: 'dotum'; color: #000; }
+		.issue li { margin-top: 10px; }
+		.issue li:first-child { margin-top: 0; }
+		.issue strong { margin-bottom: 3px; display: block; color: #ff6000; }
+		.issue span { color: #ff6000; }
+		.color { background-color: #bbf7fe; }
+		table tr td:first-child { text-align: center; }
+		.design_summary_web,
+		.design_summary_tab,
+		.design_summary_mob { display: inline-block; color: rosybrown; font-weight: bold; font-size: 12px; margin-right: 30px; }
+		.coding_summary_web,
+		.coding_summary_tab,
+		.coding_summary_mob { display: inline-block; color: red; font-weight: bold; font-size: 12px; margin-right: 30px; }
+		.dev_summary { display: inline-block; color: green; font-weight: bold; font-size: 12px; margin-right: 30px; }
+		.coding_stat_web,
+		.coding_stat_tab,
+		.coding_stat_mob { background: #ddffca; }
+		.dev_stat_web,
+		.dev_stat_web,
+		.dev_stat_web { background: rosybrown; color: #fff; }
+		.bg_gray { background: #f0f0f0; }
+		.tab_li > li { float: left; width: 100px; height: 30px; line-height: 30px; text-align: center; background: #424242; color: #fff; margin-right: 5px; margin-bottom: 5px; }
+		.tab_li > li > a { color: #fff; text-decoration: none; display: block; }
+		.tab_li > li.on { font-weight: bold; text-decoration: underline; font-size: 16px; }
+		td strong { color: red; }
+		td strong.title { color: #000; }
+		.auto-style1 { height: 20px; }
+		.auto-style2 { background: #ddffca; height: 20px; }
+	</style>
+	<script src="./js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var page_length = $('.guide_table tbody .coding_stat_web').length;
+			var page_length_dev = $('.guide_table tbody .dev_stat_web').length;
+			set_design_process = function () {
+				//web
+				var design_ended_web = 0;
+				$('.design_stat_web').each(function () {
+					var design_stat_web = $(this).text();
+					if (design_stat_web == '완료') {
+						design_ended_web = design_ended_web + 1;
+					}
+				});
+				var per_complete_web = parseInt((design_ended_web / page_length) * 100);
+				$('.design_summary_web').text('디자인(웹) 진행률 [ ' + design_ended_web + ' page / ' + page_length + ' page] ' + per_complete_web + '% 완료');
+				//web end
+
+			}
+
+			set_coding_process = function () {
+
+				//web
+				var coding_ended_web = 0;
+				$('.coding_stat_web').each(function () {
+					var coding_stat_web = $(this).text();
+					if (coding_stat_web == '완료') {
+						coding_ended_web = coding_ended_web + 1;
+					}
+				});
+				var per_complete_web = parseInt((coding_ended_web / page_length) * 100);
+				$('.coding_summary_web').text('코딩(웹) 진행률 [ ' + coding_ended_web + ' page / ' + page_length + ' page] ' + per_complete_web + '% 완료');
+			}
+
+			set_dev_process = function () {
+				var dev_ended = 0;
+				$('.dev_stat_web').each(function () {
+					var dev_stat = $(this).text();
+					if (dev_stat == '완료') {
+						dev_ended = dev_ended + 1;
+					}
+				});
+				var per_complete = parseInt((dev_ended / page_length_dev) * 100);
+				$('.dev_summary').text('개발 진행률 [ ' + dev_ended + ' page / ' + page_length_dev + ' page] ' + per_complete + '% 완료');
+			}
+
+			//set_design_process();
+			set_coding_process();
+			set_dev_process();
+
+
+			$('a').each(function () {
+				$(this).attr('target', '_blank')
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div id="g_header">
+		<h1>평창 평화포럼</h1>
+	</div>
+	<div id="g_body">
+			<div class="contents">
+				<h3>Flie List</h3>
+				<p class="guide_summary">
+				</p>
+				<ul style="margin-bottom: 10px;">
+					<li class="coding_summary_web"></li>
+				</ul>
+				<div class="issue" style="margin: 30px;">
+					<ul>
+						<li><strong>- 공통 : </strong></li>
+					</ul>
+				</div>
+			<table class="guide_table" style="table-layout: auto;">
+				<thead>
+					<tr>
+						<th>구분</th>
+						<th>2 Depth</th>					
+						<th>파일명</th>
+						<th>디자인</th>
+						<th>퍼블리싱</th>
+						<th>비고</th>
+					</tr>
+				</thead>
+				<tbody>	
+				<tr>
+					<td style="text-align: center;">MAIN</td>
+					<td style="text-align: left;"><strong class="title">MAIN</td>
+					<td style="text-align: left;"><a href="./html/main.html" target="_blank">main.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>
+					<td style="text-align: center;">MAIN 영문</td>
+					<td style="text-align: left;"><strong class="title">MAIN 영문</td>
+					<td style="text-align: left;"><a href="./html/main_eng.html" target="_blank">main_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">MAIN 기존접속자 화면</td>
+					<td style="text-align: left;"><strong class="title">MAIN</td>
+					<td style="text-align: left;"><a href="./html/main_after.html" target="_blank">main_after.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>							
+				<tr>
+					<td style="text-align: center;">전체메뉴</td>
+					<td style="text-align: left;"><strong class="title">전체메뉴</td>
+					<td style="text-align: left;"><a href="./html/member_login.html" target="_blank">member_login.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"></td>
+				</tr>									
+				<tr>
+					<td style="text-align: center;" rowspan="3">login</td>
+					<td style="text-align: left;"><strong class="title">로그인</td>
+					<td style="text-align: left;"><a href="./html/member_login.html" target="_blank">member_login.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>
+					
+					<td style="text-align: left;"><strong class="title">영문 FOOTER</td>
+					<td style="text-align: left;"><a href="./html/member_login_eng.html" target="_blank">member_login_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>			
+					<td style="text-align: left;"><strong class="title">비밀번호찾기</td>
+					<td style="text-align: left;"><a href="./html/member_pwd-find.html" target="_blank">member_pwd-find.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>				
+				<tr>
+				<tr>
+					<td style="text-align: center;" rowspan="2">회원가입</td>
+					<td style="text-align: left;"><strong class="title">회원가입</td>
+					<td style="text-align: left;"><a href="./html/member_register.html" target="_blank">member_register.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>
+				
+					<td style="text-align: left;"><strong class="title">가입완료</td>
+					<td style="text-align: left;"><a href="./html/register_complete.html" target="_blank">register_complete.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;" rowspan="3">마이페이지</td>
+					<td style="text-align: left;"><strong class="title">Myp4G</td>
+					<td style="text-align: left;"><a href="./html/mypage.html" target="_blank">mypage.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">활동내역</td>
+					<td style="text-align: left;"><a href="./html/mypage_01.html" target="_blank">mypage_01.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">회원정보수정</td>
+					<td style="text-align: left;"><a href="./html/member_register_modify.html" target="_blank">member_register_modify.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>
+					<td style="text-align: center;" rowspan="4">안내데스크</td>
+					<td style="text-align: left;"><strong class="title">공지사항</td>
+					<td style="text-align: left;"><a href="./html/notice.html" target="_blank">notice.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">공지사항 상세보기</td>
+					<td style="text-align: left;"><a href="./html/notice_view.html" target="_blank">notice_view.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">FAQ</td>
+					<td style="text-align: left;"><a href="./html/faq.html" target="_blank">faq.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">FAQ영문</td>
+					<td style="text-align: left;"><a href="./html/faq_eng.html" target="_blank">faq_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong>!--ver16 수정-- 주석처리 확인하세요</strong></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;" rowspan="2">기본세션</td>
+					<td style="text-align: left;"><strong class="title">세션안내</td>
+					<td style="text-align: left;"><a href="./html/basic_session.html" target="_blank">basic_session.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>		
+				<tr>			
+					<td style="text-align: left;"><strong class="title">연사소개 List</td>
+					<td style="text-align: left;"><a href="./html/basicl_session-speker.html" target="_blank">basicl_session-speker.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>			
+				<tr>
+					<td style="text-align: center;" rowspan="3">특별세션</td>
+					<td style="text-align: left;"><strong class="title">세션안내</td>
+					<td style="text-align: left;"><a href="./html/special_session.html" target="_blank">special_session.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>		
+				<tr>			
+					<td style="text-align: left;"><strong class="title">연사소개 List</td>
+					<td style="text-align: left;"><a href="./html/special_session-speker.html" target="_blank">special_session-speker.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>			
+					<td style="text-align: left;"><strong class="title">연사소개 List 영문</td>
+					<td style="text-align: left;"><a href="./html/special_session-speker_eng.html" target="_blank">special_session-speker_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>				
+				<tr>
+					<td style="text-align: center;" rowspan="3">정상회의장</td>
+					<td style="text-align: left;"><strong class="title">세션안내(국문)</td>
+					<td style="text-align: left;"><a href="./html/official_session.html" target="_blank">official_session.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>			
+					<td style="text-align: left;"><strong class="title">세션안내(영문)</td>
+					<td style="text-align: left;"><a href="./html/official_session_eng.html" target="_blank">official_session_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>				
+				<tr>			
+					<td style="text-align: left;"><strong class="title">리더스 소개 List</td>
+					<td style="text-align: left;"><a href="./html/offical_session-speker.html" target="_blank">offical_session-speker.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>				
+				<tr>
+					<td style="text-align: center;"  rowspan="2">프로그램</td>
+					<td style="text-align: left;"><strong class="title">TYBE-A</td>
+					<td style="text-align: left;"><a href="./html/program_event_type-A.html" target="_blank">program_event_type-A.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>				
+					<td style="text-align: left;"><strong class="title">TYBE-B</td>
+					<td style="text-align: left;"><a href="./html/program_event_type-B.html" target="_blank">program_event_type-B.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"></td>
+				</tr>		
+				<tr>
+					<td style="text-align: center;" rowspan="7">네트워킹 라운지</td>
+					<td style="text-align: left;"><strong class="title">네트워킹 라운지</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge.html" target="_blank">netework_rounge.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 view</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_view.html" target="_blank">netework_rounge_view.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 수정</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_modify.html" target="_blank">netework_rounge_modify.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 등록</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_write.html" target="_blank">netework_rounge_write.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 등록 영문</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_write_eng.html" target="_blank">netework_rounge_write_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"></td>
+				</tr>
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 참가자</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_entry.html" target="_blank">netework_rounge_entry.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>			
+					<td style="text-align: left;"><strong class="title">네트워킹 참가자 영문</td>
+					<td style="text-align: left;"><a href="./html/netework_rounge_entry_eng.html" target="_blank">netework_rounge_entry_eng.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>		
+				<tr>
+					<td style="text-align: center;" rowspan="4">미디어갤러리</td>
+					<td style="text-align: left;"><strong class="title">미디어갤러리</td>
+					<td style="text-align: left;"><a href="./html/media_gallery.html" target="_blank">media_gallery.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>				
+					<td style="text-align: left;"><strong class="title">미디어갤러리 홍보영상</td>
+					<td style="text-align: left;"><a href="./html/media_gallery_tab.html" target="_blank">media_gallery_tab.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>				
+					<td style="text-align: left;"><strong class="title">미디어갤러리 기본및특별세션 결과영상</td>
+					<td style="text-align: left;"><a href="./html/media_gallery_tab_session.html" target="_blank">media_gallery_tab_session.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>					
+				<tr>				
+					<td style="text-align: left;"><strong class="title">미디어갤러리 view</td>
+					<td style="text-align: left;"><a href="./html/media_gallery_view.html" target="_blank">media_gallery_view.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>
+					<td style="text-align: center;">포토BOOTH</td>
+					<td style="text-align: left;"><strong class="title">포토BOOTH</td>
+					<td style="text-align: left;"><a href="./html/photo_booth.html" target="_blank">photo_booth.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>
+					<td style="text-align: center;" rowspan="4">ETC</td>
+					<td style="text-align: left;"><strong class="title">이용약관</td>
+					<td style="text-align: left;"><a href="./html/use_agreement.html" target="_blank">use_agreement.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>				
+				</tr>
+				<tr>				
+						<td style="text-align: left;"><strong class="title">개인정보처리방침</td>
+					<td style="text-align: left;"><a href="./html/privacy_policy.html" target="_blank">privacy_policy.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>	
+				<tr>				
+					<td style="text-align: left;"><strong class="title">오류페이지404</td>
+					<td style="text-align: left;"><a href="./html/erro_page.html" target="_blank">erro_page.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>
+				<tr>				
+					<td style="text-align: left;"><strong class="title">오류페이지01</td>
+					<td style="text-align: left;"><a href="./html/erro_page01.html" target="_blank">erro_page01.html</a></td>
+					<td style="text-align: center;"></td>
+					<td style="text-align: center;" class="coding_stat_web">완료</td>
+					<td style="text-align: center;"><strong></strong></td>
+				</tr>		
+				
+			
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+</body>
+
+</html>

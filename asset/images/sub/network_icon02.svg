@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="그룹_2" data-name="그룹 2" transform="translate(-1984 -273)">
+    <g id="그룹_1" data-name="그룹 1" transform="translate(65 1)">
+      <rect id="사각형_1" data-name="사각형 1" width="120" height="120" transform="translate(1919 272)" fill="#fff"/>
+      <rect id="사각형_2" data-name="사각형 2" width="120" height="120" transform="translate(1919 272)" fill="#fff"/>
+    </g>
+    <path id="network_icon02" d="M15,0V9.3m0,11.4V30M30,15H20.7M9.3,15H0M4.394,4.394l6.578,6.576m8.056,8.06,6.578,6.578m0-21.214L19.028,10.97m-8.056,8.06L4.394,25.608" transform="translate(2029 321.5)" fill="none" stroke="#848484" stroke-miterlimit="10" stroke-width="2.5"/>
+  </g>
+</svg>

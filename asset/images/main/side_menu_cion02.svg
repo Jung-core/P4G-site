@@ -1,0 +1,7 @@
+<svg id="side_menu_cion02" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <circle id="타원_8" data-name="타원 8" cx="30" cy="30" r="30" opacity="0"/>
+  <rect id="사각형_1" data-name="사각형 1" width="58" height="58" rx="29" transform="translate(1 1)" fill="none" stroke="#fff" stroke-width="2" opacity="0.8"/>
+  <g id="그룹_3" data-name="그룹 3">
+    <path id="패스_8" data-name="패스 8" d="M27,21l-1.83,2H22a2.006,2.006,0,0,0-2,2V37a2.006,2.006,0,0,0,2,2H38a2.006,2.006,0,0,0,2-2V25a2.006,2.006,0,0,0-2-2H34.83L33,21Zm3,15a5,5,0,1,1,5-5A5,5,0,0,1,30,36Z" fill="#fff"/>
+  </g>
+</svg>

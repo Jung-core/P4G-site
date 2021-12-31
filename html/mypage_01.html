@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>P4G 마이페이지</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/pointer-events-polyfill.js"
+    ></script>
+    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/jquery.nicescroll.min.js"
+    ></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]> <script
+        src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script.
+        src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+
+  <body id="mypage">
+    <!--wrap St-->
+    <div id="wrap">
+      <!--container St-->
+      <section id="container">
+        <div class="biColor">
+          <div class="sbg01"></div>
+          <div class="sbg02"></div>
+          <div class="sbg03"></div>
+          <div class="sbg04"></div>
+        </div>
+        <!--header St-->
+        <header class="header">
+          <h1>
+            <a href="../asset/html/main/main.html">2021 P4G Summit Seoul</a>
+          </h1>
+
+          <ul class="utillBox">
+            <li>
+              <a href="#a">LOGIN</a>
+            </li>
+            <li>
+              <a href="#a">JOIN</a>
+            </li>
+            <li class="language">
+              <a href="#a">ENG</a>
+              <div class="language_panel" style="display: none">
+                <ul class="language_list">
+                  <li class="active">
+                    <a href="../asset/html/index_eng.html">ENG</a>
+                  </li>
+                  <li>
+                    <a href="../asset/html/index_eng.html">KOR</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#a" class="allMenu">MENU</a>
+        </header>
+        <!--//header Ed-->
+        <!--visualImg St-->
+        <div class="visualImg">
+          <div class="inerBg"></div>
+        </div>
+        <!--//visualImg Ed-->
+        <nav>
+          <ul class="naviFrame">
+            <li>
+              <a href="#a">HOME</a>
+            </li>
+            <li class="naviDire">마이페이지</li>
+          </ul>
+        </nav>
+        <!--contdiv St-->
+        <div class="contents">          
+          <!--contents St-->
+          <div class="contdiv">
+            <div class="titleBox">
+              <h2>마이페이지</h2>
+            </div>
+            <!--탭메뉴 St-->
+            <ul class="tabMenu">
+              <li>
+                <a href="#a">My P4G</a>
+              </li>
+              <li>
+                <a href="#a" class="active"><span>활동내역</span></a>
+              </li>
+            </ul>
+            <!--//탭메뉴 Ed-->
+            <div class="tabInner">
+              <!--활동내역 St-->
+              <div>
+                <!--pc리스트 St-->
+                <div class="mypage_pclist">
+                  <!--관심사가 같은 참가자 St-->
+                  <div class="slideHead">
+                    관심사가 같은 참가자들을 확인해보세요.<span
+                      ><img
+                        src="../asset/images/sub/vod_live_icon.svg"
+                        alt="live"
+                      /><em class="livetxt">LIVE</em
+                      ><img src="../asset/images/sub/vod.svg" alt="vod" /><em
+                        >VOD</em
+                      ></span
+                    >
+                  </div>
+                  <div class="contentMore" style="display: block">
+                    <div class="dataField">
+                      <!--수정ver01-->
+                      <div class="datasecond">
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check01"
+                            class="myactive"
+                          />
+                          <label for="check01">전체</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check02"
+                            class="myactive"
+                          />
+                          <label for="check02">식량농업</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check03"
+                            class="myactive"
+                          />
+                          <label for="check03">물</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check04"
+                            class="myactive"
+                          />
+                          <label for="check04">에너지</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check05"
+                            class="myactive"
+                          />
+                          <label for="check05">도시</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check06"
+                            class="myactive"
+                          />
+                          <label for="check06">순환경제</label>
+                        </span>
+                      </div>
+                      <!--수정ver01-->
+                      <div>
+                        <div class="firBox">
+                          <select class="mem block">
+                            <option>국가</option>
+                          </select>
+                        </div>
+                        <div class="secondBox">
+                          <select class="mem block">
+                            <option>소속기관</option>
+                          </select>
+                        </div>
+                        <div class="thirddBox">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="소속(업체명), 참가자 이름을 입력해주세요."
+                          />
+                        </div>
+                        <div>
+                          <button type="button" class="myiactive_btn">
+                            P4G참가자 확인하기
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="favoriteManlist">
+                      <div class="firDiv">
+                        <span
+                          ><img
+                            src="../asset/images/sub/p4g_icon01.svg"
+                            alt="p4g"
+                        /></span>
+                      </div>
+                      <div class="seconDiv">
+                        <h3>홍길동</h3>
+                        <p>Republic of Korea</p>
+                      </div>
+                      <div treeDiv>
+                        <h3>이즈피엠피 차장</h3>
+                        <p>언론 및 미디어</p>
+                      </div>
+                      <div class="lastDiv">
+                        <button type="button" class="myiactivedel_btn">
+                          DELETE
+                        </button>
+                        <button type="button" class="myiactiveconnect_btn">
+                          CONNECT
+                        </button>
+                        <div class="snsConect">
+                          <span class="closeBtn clost"
+                            ><img
+                              src="../asset/images/sub/sns_close.svg"
+                              alt="닫기"
+                          /></span>
+                          <div class="snsBoxdiv">
+                            <p>
+                              P4G 참가자들과 녹색회복에 대해<br />이야기
+                              나눠보세요!
+                            </p>
+                            <a href="#a"
+                              ><img
+                                src="../asset/images/sub/twiter_icon.svg"
+                                alt="twiter" /></a
+                            ><a href="#a"
+                              ><img
+                                src="../asset/images/sub/facebook_icon.svg"
+                                alt="facebook" /></a
+                            ><a href="#a"
+                              ><img
+                                src="../asset/images/sub/instgram_icon.svg"
+                                alt="instgram" /></a
+                            ><a href="#a"
+                              ><img
+                                src="../asset/images/sub/in_icon.svg"
+                                alt="in_icon"
+                            /></a>
+                            <!--
+                            <a href="#a"><img src="../asset/images/sub/twiter_icon_off.svg" alt="twiter"></a><a href="#a"><img src="../asset/images/sub/facebook_icon_off.svg" alt="facebook"></a><a href="#a"><img src="../asset/images/sub/instgram_icon_off.svg" alt="instgram"></a><a href="#a"><img src="../asset/images/sub/in_icon_off.svg" alt="in_icon"></a>
+                            -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="favoriteManlistmore">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                    <div class="favoriteManlist second">
+                      <div class="firDiv">
+                        <span
+                          ><img
+                            src="../asset/images/sub/p4g_icon02.svg"
+                            alt="p4g"
+                        /></span>
+                      </div>
+                      <div class="seconDiv">
+                        <h3>Leonardo DiCaprio Leonardo</h3>
+                        <p>Republic of Korea</p>
+                      </div>
+                      <div treeDiv>
+                        <h3>이즈피엠피 차장</h3>
+                        <p>언론 및 미디어</p>
+                      </div>
+                      <div class="lastDiv">
+                        <button type="button" class="favorite_btn">
+                          FAVORITE
+                        </button>
+                        <button type="button" class="myiactiveconnect_btn">
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                    <div class="favoriteManlistmore">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                    <div class="favoriteManlist second">
+                      <div class="firDiv">
+                        <span
+                          ><img
+                            src="../asset/images/sub/p4g_icon03.svg"
+                            alt="p4g"
+                        /></span>
+                      </div>
+                      <div class="seconDiv">
+                        <h3>홍길동</h3>
+                        <p>Republic of Korea</p>
+                      </div>
+                      <div treeDiv>
+                        <h3>이즈피엠피 차장</h3>
+                        <p>언론 및 미디어</p>
+                      </div>
+                      <div class="lastDiv">
+                        <button type="button" class="myiactivedel_btn">
+                          DELTE
+                        </button>
+                        <button type="button" class="myiactiveconnect_btn">
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                    <div class="favoriteManlistmore">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//관심사가 같은 참가자 Ed-->
+                  <!--게시하신 글 St-->
+                  <div class="slideHead mttop">게시하신 글을 확인해보세요.</div>
+                  <div class="contentMore" style="display: block">
+                    <div class="dataField">
+                      <!--수정ver01-->
+                      <div class="datasecond">
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check01"
+                            class="myactive"
+                          />
+                          <label for="check01">전체</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check02"
+                            class="myactive"
+                          />
+                          <label for="check02">식량농업</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check03"
+                            class="myactive"
+                          />
+                          <label for="check03">물</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check04"
+                            class="myactive"
+                          />
+                          <label for="check04">에너지</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check05"
+                            class="myactive"
+                          />
+                          <label for="check05">도시</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check06"
+                            class="myactive"
+                          />
+                          <label for="check06">순환경제</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check07"
+                            class="myactive"
+                          />
+                          <label for="check07">기타</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check08"
+                            class="myactive"
+                          />
+                          <label for="check08">의견</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input
+                            type="checkbox"
+                            id="check09"
+                            class="myactive"
+                          />
+                          <label for="check09">홍보</label>
+                        </span>
+                      </div>
+                      <!--수정ver01-->
+                      <div>
+                        <div class="thirddBox">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="검색어를 입력해주세요."
+                          />
+                        </div>
+                        <div class="onebutton">
+                          <button type="button" class="myiactives_btn">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list_table_head topline">
+                      <div class="list01">번호</div>
+                      <div class="list02">시간(KST)</div>
+                      <div class="list03">제목</div>
+                      <div class="list04">소속기관</div>
+                      <div class="list05">글쓴이</div>
+                      <div class="list06">좋아요</div>
+                      <div class="list07">조회수</div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list01">1110</div>
+                      <div class="list02">
+                        <span>[의견]</span>
+                      </div>
+                      <div class="list03">
+                        지속가능한 농업과 푸드시스템 구축을 위한
+                      </div>
+                      <div class="list04">과학기술정보통신부</div>
+                      <div class="list05">홍길동</div>
+                      <div class="list06">11000</div>
+                      <div class="list07">11000</div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list01">1109</div>
+                      <div class="list02">
+                        <span>[홍보]</span>
+                      </div>
+                      <div class="list03">
+                        지속가능한 농업과 푸드시스템 구축을 위한
+                      </div>
+                      <div class="list04">과학기술정보통신부</div>
+                      <div class="list05">홍길동</div>
+                      <div class="list06">11000</div>
+                      <div class="list07">11000</div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list01">1108</div>
+                      <div class="list02">
+                        <span>[의견]</span>
+                      </div>
+                      <div class="list03">
+                        지속가능한 농업과 푸드시스템 구축을 위한
+                      </div>
+                      <div class="list04">과학기술정보통신부</div>
+                      <div class="list05">홍길동</div>
+                      <div class="list06">11000</div>
+                      <div class="list07">11000</div>
+                    </div>
+                  </div>
+                  <!--//게시하신글 Ed-->
+                  <!--메모하신 글 St-->
+                  <div class="slideHead mttop">메모하신 글을 확인해보세요.</div>
+                  <div class="contentMore" style="display: block">
+                    <div class="dataField">
+                      <!--2020-0428수정-->
+                      <div class="datafirst">
+                        <div class="firBoxty01">
+                          <select class="mem block">
+                            <option>일자</option>
+                          </select>
+                        </div>
+                        <div class="firBoxty02">
+                          <select class="mem block">
+                            <option>세션구분</option>
+                          </select>
+                        </div>
+                        <div class="firBoxty03">
+                          <select class="mem block">
+                            <option>주관부처</option>
+                          </select>
+                        </div>
+                        <div class="firBoxty04">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="주관,세션명,연사 성함을 입력해 주세요"
+                          />
+                        </div>
+                        <div class="onebutton">
+                          <button type="button" class="myiactives_btn">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                      <!--//2020-0428수정-->
+                    </div>
+                    <div class="list_table_head padding topline">
+                      <div class="list21">발송일</div>
+                      <div class="list22">구분</div>
+                      <div class="list23">주제</div>
+                      <div class="list24">세션제목</div>
+                      <div class="list25">주관부처</div>
+                      <div class="list26"></div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list21">2021.05.24</div>
+                      <div class="list22">
+                        <span>[특별세션]</span>
+                      </div>
+                      <div class="list23">탄소중립실천</div>
+                      <div class="list24">
+                        제목이 들어갑니다. 제목이 들어갑니다.
+                      </div>
+                      <div class="list25">환경부</div>
+                      <div class="list26">
+                        <button type="button" class="myrersend_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list21">2021.05.24</div>
+                      <div class="list22">
+                        <span>[특별세션]</span>
+                      </div>
+                      <div class="list23">그린뉴딜</div>
+                      <div class="list24">
+                        제목이 들어갑니다. 제목이 들어갑니다.
+                      </div>
+                      <div class="list25">기획재정부</div>
+                      <div class="list26">
+                        <button type="button" class="myrersend_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                    <div class="list_table_head body bodybgcolor">
+                      <div class="list21">2021.05.24</div>
+                      <div class="list22">
+                        <span>[특별세션]</span>
+                      </div>
+                      <div class="list23">그린뉴딜</div>
+                      <div class="list24">
+                        제목이 들어갑니다. 제목이 들어갑니다.
+                      </div>
+                      <div class="list25">기획재정부</div>
+                      <div class="list26">
+                        <button type="button" class="myrersend_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//메모하신 글 Ed-->
+                </div>
+                <!--//pc리스트 Ed-->
+                <!--모바일 리스트 St-->
+                <div class="mypage_mobilelist">
+                  <!--관심사가 같은 참가자 St-->
+                  <div class="slideHead">
+                    관심사가 같은 참가자들을 확인해보세요.
+                  </div>
+                  <div class="contentMore mobileDiv" style="display: block">
+                    <div class="dataField">
+                      <!--수정ver01-->
+                      <div class="mypagebox">
+                        <!--//수정ver01-->
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check01" />
+                          <label for="check01">전체</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check02" />
+                          <label for="check02">식량농업</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check03" />
+                          <label for="check03">물</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check04" />
+                          <label for="check04">에너지</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check05" />
+                          <label for="check05">도시</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check06" />
+                          <label for="check06">순환경제</label>
+                        </span>
+                      </div>
+                      <!--수정ver01-->
+                      <div class="mypagebox">
+                        <!--//수정ver01-->
+                        <div class="firBox">
+                          <select class="mem block">
+                            <option>국가</option>
+                          </select>
+                        </div>
+                        <div class="secondBox">
+                          <select class="mem block">
+                            <option>소속기관</option>
+                          </select>
+                        </div>
+                        <div class="thirddBox">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="소속(업체명), 참가자 이름을 입력해주세요."
+                          />
+                        </div>
+                        <div>
+                          <button type="button" class="myiactive_btn">
+                            P4G참가자 확인하기
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02 first-child">
+                      <div>
+                        <img
+                          src="../asset/images/sub/p4g_icon01.svg"
+                          alt="p4g"
+                        />
+                      </div>
+                      <div class="flextdtype02">
+                        <div><strong>홍길동</strong></div>
+                        <div>Republic of Korea</div>
+                        <div><strong>이즈피엠피 차장</strong></div>
+                        <div>언론 및 미디어</div>
+                      </div>
+                      <div class="type02">
+                        <div>
+                          <button type="button" class="myiactivedel_btn">
+                            DELETE
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="myiactiveconnect_btn"
+                            onclick="callPop('#snsPop')"
+                          >
+                            CONNECT
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02more">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02">
+                      <div>
+                        <img
+                          src="../asset/images/sub/p4g_icon02.svg"
+                          alt="p4g"
+                        />
+                      </div>
+                      <div class="flextdtype02">
+                        <div>
+                          <strong
+                            >Leonardo DiCaprio Leonardo DiCapri oprio</strong
+                          >
+                        </div>
+                        <div>Republic of Korea</div>
+                        <div><strong>이즈피엠피 차장</strong></div>
+                        <div>언론 및 미디어</div>
+                      </div>
+                      <div class="type02">
+                        <div>
+                          <button type="button" class="favorite_btn">
+                            FAVORITE
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="myiactiveconnect_btn"
+                            onclick="callPop('#snsPop')"
+                          >
+                            CONNECT
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02more">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02">
+                      <div>
+                        <img
+                          src="../asset/images/sub/p4g_icon03.svg"
+                          alt="p4g"
+                        />
+                      </div>
+                      <div class="flextdtype02">
+                        <div><strong>홍길동</strong></div>
+                        <div>Republic of Korea</div>
+                        <div><strong>이즈피엠피 차장</strong></div>
+                        <div>언론 및 미디어</div>
+                      </div>
+                      <div class="type02">
+                        <div>
+                          <button type="button" class="favorite_btn">
+                            FAVORITE
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            type="button"
+                            class="myiactiveconnect_btn"
+                            onclick="callPop('#snsPop')"
+                          >
+                            CONNECT
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-listframe-type02more">
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                      <div class="favorite_cont">
+                        <div class="fircon"><span>의견</span></div>
+                        <div class="mobiletxtc">
+                          글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                        <div class="more"><span></span>더보기</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//관심사가 같은 참가자 Ed-->
+                  <!--게시하신 글 St-->
+                  <div class="slideHead mobilettop">
+                    게시하신 글을 확인해 보세요.
+                  </div>
+                  <div class="contentMore mobileDiv" style="display: block">
+                    <div class="dataField">
+                      <!--수정ver01-->
+                      <div class="mypagebox">
+                        <!--//수정ver01-->
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check01" />
+                          <label for="check01">전체</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check02" />
+                          <label for="check02">식량농업</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check03" />
+                          <label for="check03">물</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check04" />
+                          <label for="check04">에너지</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check05" />
+                          <label for="check05">도시</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check06" />
+                          <label for="check06">순환경제</label>
+                        </span>
+                      </div>
+                      <!--수정ver01-->
+                      <div class="mypagebox">
+                        <!--//수정ver01-->
+                        <div class="thirddBox">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="검색어을 입력해주세요."
+                          />
+                        </div>
+                        <div>
+                          <button type="button" class="myiactive_btn">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--수정ver01-->
+                    <div class="mobile-listBody topborderline">
+                      <div class="mobile-listframe">
+                        <div><strong>1110</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[의견]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">소속기관</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">글쓴이</div>
+                        <div class="flextd">홍길동</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title"></div>
+                        <div class="flextd">
+                          <span>좋아요<em>110</em></span
+                          ><span>조회수<em>110</em></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--//수정ver01-->
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>1109</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[홍보]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">소속기관</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">글쓴이</div>
+                        <div class="flextd">홍길동</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title"></div>
+                        <div class="flextd">
+                          <span>좋아요<em>110</em></span
+                          ><span>조회수<em>110</em></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>1108</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[의견]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">소속기관</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">글쓴이</div>
+                        <div class="flextd">홍길동</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title"></div>
+                        <div class="flextd">
+                          <span>좋아요<em>110</em></span
+                          ><span>조회수<em>110</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//게시하신 글 Ed-->
+                  <!--메모하신 글 St-->
+                  <div class="slideHead mobilettop">
+                    메모하신 글을 확인해 보세요.
+                  </div>
+                  <div class="contentMore mobileDiv" style="display: block">
+                    <div class="dataField">
+                      <!--수정ver01-->
+                      <div class="mypagebox">
+                        <!--//수정ver01-->
+                        <div class="thirddBox">
+                          <select class="mem block">
+                            <option>일자</option>
+                          </select>
+                        </div>
+                        <div class="thirddBox">
+                          <select class="mem block">
+                            <option>세션구분</option>
+                          </select>
+                        </div>
+                        <div class="thirddBox">
+                          <select class="mem block">
+                            <option>주관부처</option>
+                          </select>
+                        </div>
+                        <div class="thirddBox">
+                          <input
+                            type="text"
+                            class="mem block"
+                            placeholder="주제, 세션명, 연사 성함을 입력해주세요."
+                          />
+                        </div>
+                        <div>
+                          <button type="button" class="myiactive_btn">
+                            검색
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--수정ver01-->
+                    <div class="mobile-listBody topborderline">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[특별세션]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">글로벌 탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          제목이 들어갑니다. 글로벌 탄소중립을 위한 지방 정부의
+                          역할 글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">환경부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <button type="button" class="myiactivere_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                    <!--//수정ver01-->
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[특별세션]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">글로벌 탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          제목이 들어갑니다. 글로벌 탄소중립을 위한 지방 정부의
+                          역할 글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">환경부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <button type="button" class="myiactivere_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">[특별세션]</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">글로벌 탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          제목이 들어갑니다. 글로벌 탄소중립을 위한 지방 정부의
+                          역할 글로벌 탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">환경부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <button type="button" class="myiactivere_btn">
+                          재발송
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--//메모하신 글 Ed-->
+                </div>
+                <!--//모바일 리스트 Ed-->
+              </div>
+              <!--//활동내역 Ed-->
+            </div>
+          </div>
+          <!--//contdiv Ed-->
+        </div>
+        <!--//contents Ed-->
+      </section>
+      <!---//container Ed-->
+      <!--footer St-->
+      <footer>
+        <div class="footInner">
+          <!--ver04 수정-->
+          <div class="footMenu footmobile">
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_left">
+            <p>2021 P4G Seoul Summit</p>
+            <p class="last-child">
+              Copyrights (c) 2021 P4G Seoul Summit. All rights reserved.
+            </p>
+            <div class="mobileemail">E-mail: 2021p4g.info@gmail.com</div>
+          </div>
+          <div class="footMenu footpc">
+            <div class="pcemail">E-mail: 2021p4g.info@gmail.com</div>
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <!--//ver04 수정-->
+          <div class="snsMenu">
+            <span class="mobile_footlogo"></span>
+            <ul>
+              <li class="sns01">
+                <a href="#a">P4G</a>
+              </li>
+              <li class="sns02">
+                <a href="#a">facebook</a>
+              </li>
+              <li class="sns03">
+                <a href="#a">instagram</a>
+              </li>
+              <li class="sns04">
+                <a href="#a">utube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--//footer Ed-->
+    </div>
+    <!--//wrap Ed-->
+    <!--GOTO St-->
+    <a
+      href="#header"
+      class="go_top"
+      title="위로가기"
+      style="display: block"
+    ></a>
+    <!--//GOTO Ed-->
+    <script type="text/javascript" src="../asset/js/content.js"></script>
+    <script>
+      $(".myiactiveconnect_btn").click(function () {
+        $(".snsConect").addClass("active");
+      });
+      $(".clost").click(function () {
+        $(".snsConect").removeClass("active");
+      });
+    </script>
+    <!--snsdPop-->
+    <div class="popup" id="snsPop">
+      <div class="pop-con">
+        <div class="snsPop">
+          <a href="#none" class="close b-close"
+            ><img src="../asset/images/sub/sns_close.svg" alt="닫기"
+          /></a>
+          <div class="snsBoxdiv">
+            <p>P4G 참가자들과 녹색회복에 대해<br />이야기 나눠보세요!</p>
+            <a href="#a"
+              ><img src="../asset/images/sub/twiter_icon.svg" alt="twiter" /></a
+            ><a href="#a"
+              ><img
+                src="../asset/images/sub/facebook_icon.svg"
+                alt="facebook" /></a
+            ><a href="#a"
+              ><img
+                src="../asset/images/sub/instgram_icon.svg"
+                alt="instgram" /></a
+            ><a href="#a"
+              ><img src="../asset/images/sub/in_icon.svg" alt="in_icon"
+            /></a>
+            <!--
+              <a href="#a"><img src="../asset/images/sub/twiter_icon_off.svg" alt="twiter"></a><a href="#a"><img src="../asset/images/sub/facebook_icon_off.svg" alt="facebook"></a><a href="#a"><img src="../asset/images/sub/instgram_icon_off.svg" alt="instgram"></a><a href="#a"><img src="../asset/images/sub/in_icon_off.svg" alt="in_icon"></a>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//snsdPop-->
+  </body>
+</html>

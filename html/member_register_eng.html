@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>P4G 회원가입</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/pointer-events-polyfill.js"
+    ></script>
+    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/jquery.nicescroll.min.js"
+    ></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]> <script
+        src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script.
+        src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+
+  <body id="memberRegister">
+    <!--wrap St-->
+    <div id="wrap">
+      <!--container St-->
+      <section id="container">
+        <div class="biColor">
+          <div class="sbg01"></div>
+          <div class="sbg02"></div>
+          <div class="sbg03"></div>
+          <div class="sbg04"></div>
+        </div>
+        <!--header St-->
+        <header class="header">
+          <h1>
+            <a href="../asset/html/main/main.html">2021 P4G Summit Seoul</a>
+          </h1>
+          <ul class="utillBox">
+            <li>
+              <a href="#a">LOGIN</a>
+            </li>
+            <li>
+              <a href="#a">JOIN</a>
+            </li>
+            <li class="language">
+              <a href="#a">ENG</a>
+              <div class="language_panel" style="display: none">
+                <ul class="language_list">
+                  <li class="active">
+                    <a href="../asset/html/index_eng.html">ENG</a>
+                  </li>
+                  <li>
+                    <a href="../asset/html/index_eng.html">KOR</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#a" class="allMenu">MENU</a>
+        </header>
+        <!--//header Ed-->
+        <!--visualImg St-->
+        <div class="visualImg">
+          <div class="inerBg"></div>
+        </div>
+        <!--//visualImg Ed-->
+        <nav>
+          <ul class="naviFrame">
+            <li>
+              <a href="#a">HOME</a>
+            </li>
+            <li class="naviDire">회원가입</li>
+          </ul>
+        </nav>
+        <!--contents St-->
+        <div class="contents">          
+          <!--contdiv St-->
+          <div class="contdiv">
+            <div class="titleBox">
+              <h2>회원가입</h2>
+              <div class="memberRegcopy">
+                2021 서울 녹색미래 정상회의는 가상 행사장 플랫폼을 통해
+                온라인으로만 참가 가능합니다.<br />
+                세션 등록을 완료하신 분들게 세션을 즐길 수 있는 다양한 기능을
+                제공해드리오니 많은 참여 바랍니다.
+                <span>표시는 필수 입력 사항입니다.</span>
+              </div>
+            </div>
+            <!--member register St-->
+            <div class="memberInner">
+              <!--수정ver01-->
+              <div class="copyrightBoxmobile">ⓒPanta Creation</div>
+              <!--//수정ver01-->
+              <h3 class="member_tableTitle">Personal Information</h3>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">Nationality</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <select class="mem block">
+                          <option>Republic of Korea</option>
+                        </select>
+                      </div>
+                      <div class="spaceBox"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">E-mail(ID)</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="Please enter an email"
+                        />
+                      </div>
+                      <div class="spaceBox">
+                        <button type="button" class="mem_btnRegister">
+                          Confirm Duplication
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofield">Password</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <a href="#a" class="mem_btnInput btnGreen">Strong</a>
+                        <!--<a href="#a" class="btnYellow">보통</a> <a href="#a"
+                                                class="btnRed">미흡</a>//-->
+                        <input
+                          type="password"
+                          class="mem block"
+                          placeholder="Please enter your password"
+                        />
+                      </div>
+                      <div class="spaceBox mobile">
+                        <span
+                          >(영문 대/소문자, 숫자, 특수문자!@#$%^&* 조합
+                          8자리이상)</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mem_registerFiledbox mt10">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="password"
+                          class="mem block"
+                          placeholder="Please enter your password"
+                        />
+                      </div>
+                      <div class="spaceBox"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofieldone">Gender</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div class="mem_checkBox">
+                        <span
+                          ><input type="radio" id="radio01" />
+                          <label for="radio01">Male</label> </span
+                        ><span
+                          ><input type="radio" id="radio02" />
+                          <label for="radio02">Female</label>
+                        </span>
+                        <span
+                          ><input type="radio" id="radio03" />
+                          <label for="radio03">Other</label> </span
+                        ><span
+                          ><input type="radio" id="radio04" />
+                          <label for="radio04">Prefer not to answer</label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">Age</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <select class="mem block">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                      <div class="spaceBox"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery mem_unimport twofield mobiletop"
+                    >Highest degree or level of education
+                  </span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div class="mem_checkBox">
+                        <span class="mbh"
+                          ><input type="radio" id="radio011" />
+                          <label for="radio011"
+                            >Less than a high school diploma</label
+                          > </span
+                        ><span class="mbh"
+                          ><input type="radio" id="radio021" />
+                          <label for="radio021"
+                            >High school diploma or equivalent</label
+                          >
+                        </span>
+                        <span class="mbh"
+                          ><input type="radio" id="radio031" />
+                          <label for="radio013">Bachelor's degree</label> </span
+                        ><span class="mbh"
+                          ><input type="radio" id="radio041" />
+                          <label for="radio041">Master's degree</label> </span
+                        ><span class="mbh"
+                          ><input type="radio" id="radio051" />
+                          <label for="radio051"
+                            >Doctorate's degree</label
+                          > </span
+                        ><span class="mbh"
+                          ><input type="radio" id="radio061" />
+                          <label for="radio061"
+                            >Prefer not to answer degree</label
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">Name</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="First Name"
+                        />
+                      </div>
+
+                      <div class="spaceBox mobile">
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="First Name"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">한글성함</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="실명을 입력해주세요"
+                        />
+                      </div>
+                      <div class="spaceBox"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">Nick Name</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="Within 10 characters"
+                        />
+                      </div>
+                      <div class="spaceBox mobile nick">
+                        <span
+                          >네트워킹 라운지 참여 시 사용하실 이름을 입력해주세요.
+                          (10자 이내)</span
+                        >
+                      </div>
+                      <div class="spaceBox-large">
+                        <button type="button" class="mem_btnRegister">
+                          Confirm Duplication
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofield">Affiliation</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <select class="mem block">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                      <div class="spaceBox mobile">
+                        <input
+                          type="password"
+                          class="mem block"
+                          placeholder="Other"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mem_registerFiledbox mt10">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="password"
+                          class="mem block"
+                          placeholder="Affiliation (English)"
+                        />
+                      </div>
+                      <div class="spaceBox mobile">
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="소속기관을 입력해주세요"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery">Job Title</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="Job Title (English)"
+                        />
+                      </div>
+                      <div class="spaceBox mobile">
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="직위를 입력해주세요. (한글)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--ver03 수정-->
+              <h3 class="member_tableTitle secondtable">
+                Additional Information
+              </h3>
+              <!--//ver03 수정-->
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofieldone">SNS</span>
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div>
+                        <div class="mem_checkBox">
+                          <span class="sns onethtouth"
+                            ><input type="radio" id="radio211" />
+                            <label for="radio211">Have</label> </span
+                          ><span class="sns onethtouth"
+                            ><input type="radio" id="radio222" />
+                            <label for="radio222">Do not have</label>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="spaceBox"></div>
+                    </div>
+                  </div>
+                  <div class="mem_registerFiledbox mt10">
+                    <div class="mem_frame treeDivdebox">
+                      <div>
+                        <select class="mem block">
+                          <option>Republic of Korea</option>
+                        </select>
+                      </div>
+                      <div>
+                        <input type="text" class="block mem" />
+                      </div>
+                      <div class="treDivide">
+                        <button type="button" class="mem_btnRegister">
+                          Confirm Duplication
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--ver03 수정-->
+              <div class="mem_registerWritebox firstfieldbox">
+                <!--//ver03 수정-->
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofieldone"
+                    >Recognition Path</span
+                  >
+                </div>
+                <div>
+                  <!--ver03 수정-->
+                  <div class="mem_fieldCopy firstcopy">
+                    How did you learn about the 2021 P4G Seoul Summit?
+                  </div>
+                  <!--ver03 수정-->
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div class="mem_checkBox">
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check01" />
+                          <label for="check01"
+                            >P4G Partnerships Official Homepage</label
+                          > </span
+                        ><span class="checkBox"
+                          ><input type="checkbox" id="check02" />
+                          <label for="check02"
+                            >P4G Seoul Summit Official Homepage</label
+                          >
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="check03" />
+                          <label for="check03"
+                            >P4G Seoul Summit Official SNS</label
+                          >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mem_snsBox">
+                    <div>
+                      <span
+                        ><input type="checkbox" id="sns01" />
+                        <label for="sns01">Instagram</label>
+                      </span>
+                      <span
+                        ><input type="checkbox" id="sns02" />
+                        <label for="sns02">Facebook</label>
+                      </span>
+                      <span
+                        ><input type="checkbox" id="sns03" />
+                        <label for="sns03">Linkedin</label>
+                      </span>
+                      <span
+                        ><input type="checkbox" id="sns04" />
+                        <label for="sns04">Youtube</label>
+                      </span>
+                      <span
+                        ><input type="checkbox" id="sns05" />
+                        <label for="sns05">Kakao&nbsp;&nbsp;Channel</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div class="mem_checkBox">
+                        <span
+                          ><input type="checkbox" id="sns06" />
+                          <label for="sns06"
+                            >Other P4G Related Organizations</label
+                          >
+                        </span>
+                        <span
+                          ><input type="checkbox" id="sns07" />
+                          <label for="sns07">Word of mouth</label>
+                        </span>
+                        <span
+                          ><input type="checkbox" id="sns08" />
+                          <label for="sns08">News Media</label>
+                        </span>
+                        <span
+                          ><input type="checkbox" id="sns09" />
+                          <label for="sns09">Other</label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <!--ver03 수정-->
+                      <div
+                        class="spaceBox mtop20 mobile"
+                        style="margin-right: 0px"
+                      >
+                        <input
+                          type="text"
+                          class="mem block"
+                          placeholder="기타경로를 입력해주세요"
+                        />
+                      </div>
+                      <!--//ver03 수정-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <!--ver03 수정-->
+                  <span class="mem_titleAccery unimport pcaccery">
+                    Profile Photo<br />Headshot
+                  </span>
+                  <span class="mem_titleAccery unimport mobileaccery">
+                    Profile Photo Headshot
+                  </span>
+                  <!--//ver03 수정-->
+                </div>
+                <div>
+                  <div class="registerFiledbox">
+                    <div class="profileFrame">
+                      <div class="photoFrame">
+                        <div>
+                          <img
+                            src="../asset/images/common/ico_image.png"
+                            alt="프로필사진"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          *Must be over 5mb and under 50mb in JPEG format
+                        </div>
+                        <div>
+                          *Minimum acceptable dimensions are 480 pixels (width)
+                          X 640 pixels (height)
+                        </div>
+                        <div>
+                          *Maximum acceptable dimensions are 960 pixels (width)
+                          X 1280 pixel (height)
+                        </div>
+                      </div>
+                      <div class="photoBtnframe">
+                        <button type="button" class="mem_btnRegister">
+                          Upload
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox etcfield">
+                <div class="mem_titBox">
+                  <!--ver03 수정-->
+                  <span class="mem_titleAccery twofieldone pcaccery"
+                    >hematic areas of<br />interest</span
+                  >
+                  <span class="mem_titleAccery twofieldone mobileaccery"
+                    >hematic areas of interest</span
+                  >
+                  <!--//ver03 수정-->
+                </div>
+                <div>
+                  <div class="mem_registerFiledbox">
+                    <div class="mem_frame">
+                      <div class="mem_checkBox">
+                        <span class="checkBox"
+                          ><input type="checkbox" id="select01" />
+                          <label for="select01">Water</label> </span
+                        ><span class="checkBox"
+                          ><input type="checkbox" id="select02" />
+                          <label for="select02">Energy</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="select03" />
+                          <label for="select03"
+                            >Food and Agriculture</label
+                          > </span
+                        ><span class="checkBox"
+                          ><input type="checkbox" id="select04" />
+                          <label for="select04">Cities</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="select05" />
+                          <label for="select05">Circular Economy</label>
+                        </span>
+                        <span class="checkBox"
+                          ><input type="checkbox" id="select06" />
+                          <label for="select06">None</label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="member_tableTitle txtNone"></h3>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofieldone"
+                    >Recognition Path</span
+                  >
+                </div>
+                <div>
+                  <div class="mem_fieldCopy">
+                    How did you learn about the 2021 P4G Seoul Summit?
+                  </div>
+                  <div class="mem_fieldCopy">
+                    동의하신 분들은 가상행사장 플랫폼의 P4G 참가자로.
+                    <p>
+                      (공개항목: 닉네임, 소속기관, 직위, SNS 계정, 관심주제
+                      분야) 공개됩니다.
+                    </p>
+                  </div>
+                  <div class="mem_checkBox_one">
+                    <span class="checkBox"
+                      ><input type="radio" id="Agree" />
+                      <label for="Agree">Agree</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="radio" id="Disagree" />
+                      <label for="Disagree">Disagree </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofield"
+                    >Collection and Use of Personal Information</span
+                  >
+                </div>
+                <div>
+                  <div class="mem_agreeBox">
+                    <div>
+                      <textarea rows="10" class="mem"></textarea>
+                    </div>
+                    <div>
+                      Only those who agree can register.
+                      <span
+                        ><input type="checkbox" id="proagree03" />
+                        <label for="proagree03">Agree</label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_registerWritebox">
+                <div class="mem_titBox">
+                  <span class="mem_titleAccery twofield"
+                    >onfidential Information Agreement</span
+                  >
+                </div>
+                <div>
+                  <div class="mem_agreeBox">
+                    <div>
+                      <textarea rows="10" class="mem"></textarea>
+                    </div>
+                    <div>
+                      Only those who agree can register.
+                      <span
+                        ><input type="checkbox" id="proagree03" />
+                        <label for="proagree03">Agree</label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mem_Btnframe">
+                <div>
+                  <button type="button" class="mem_btnCancel">Cancel</button>
+                </div>
+                <div>
+                  <button type="button" class="mem_btnRegok">Complete</button>
+                </div>
+              </div>
+            </div>
+            <!--//member register Ed-->
+          </div>
+          <!--//contdiv Ed-->
+        </div>
+        <!--//contents Ed-->
+        <!--수정ver01-->
+        <div class="copyrightBox">ⓒPanta Creation</div>
+        <!--//수정ver01-->
+      </section>
+      <!---//container Ed-->
+      <!--footer St-->
+      <footer>
+        <div class="footInner">
+          <!--ver08 수정-->
+          <div class="footMenu footmobile">
+            <ul class="engfootmenu">
+              <li>
+                <a href="#a">Terms and conditionsy</a>
+              </li>
+              <li>
+                <a href="#a">Collection and Use of Personal Information</a>
+              </li>
+              <li>
+                <a href="#a">Rejection of email collection</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_left">
+            <p>2021 P4G Seoul Summit</p>
+            <p class="last-child">
+              Copyrights (c) 2021 P4G Seoul Summit. All rights reserved.
+            </p>
+            <div class="mobileemail">E-mail: 2021p4g.info@gmail.com</div>
+          </div>
+          <div class="footMenu footpc">
+            <div class="pcemail engemail">E-mail: 2021p4g.info@gmail.com</div>
+            <ul class="footengmenu">
+              <li>
+                <a href="#a">Terms and conditionsy</a>
+              </li>
+
+              <li>
+                <a href="#a">Collection and Use of Personal Information</a>
+              </li>
+
+              <li>
+                <a href="#a">Rejection of email collection</a>
+              </li>
+            </ul>
+          </div>
+          <div class="snsMenu engmenu">
+            <span class="mobile_footlogo"></span>
+            <ul>
+              <li class="sns01">
+                <a href="#a">P4G</a>
+              </li>
+              <li class="sns02">
+                <a href="#a">facebook</a>
+              </li>
+              <li class="sns03">
+                <a href="#a">instagram</a>
+              </li>
+              <li class="sns04">
+                <a href="#a">utube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--//ver08 수정-->
+      </footer>
+      <!--//footer Ed-->
+    </div>
+    <!--//wrap Ed-->
+    <!--GOTO St-->
+    <a
+      href="#header"
+      class="go_top"
+      title="위로가기"
+      style="display: block"
+    ></a>
+    <!--//GOTO Ed-->
+    <script type="text/javascript" src="../asset/js/content.js"></script>
+  </body>
+</html>

@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>P4G 네트워킹라운지</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <link rel="stylesheet" href="../asset/css/slick.css" />
+    <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/pointer-events-polyfill.js"
+    ></script>
+    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/jquery.nicescroll.min.js"
+    ></script>
+    <script type="text/javascript" src="../asset/js/slick.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]> <script
+        src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script.
+        src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+
+  <body id="networkroungeview">
+    <!--wrap St-->
+    <div id="wrap">
+      <!--container St-->
+      <section id="container">
+        <div class="biColor">
+          <div class="sbg01"></div>
+          <div class="sbg02"></div>
+          <div class="sbg03"></div>
+          <div class="sbg04"></div>
+        </div>
+        <!--header St-->
+        <header class="header">
+          <h1>
+            <a href="../asset/html/main/main.html">2021 P4G Summit Seoul</a>
+          </h1>
+
+          <ul class="utillBox">
+            <li>
+              <a href="#a">LOGIN</a>
+            </li>
+            <li>
+              <a href="#a">JOIN</a>
+            </li>
+            <li class="language">
+              <a href="#a">ENG</a>
+              <div class="language_panel" style="display: none">
+                <ul class="language_list">
+                  <li class="active">
+                    <a href="../asset/html/index_eng.html">ENG</a>
+                  </li>
+                  <li>
+                    <a href="../asset/html/index_eng.html">KOR</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#a" class="allMenu">MENU</a>
+        </header>
+        <!--//header Ed-->
+        <!--visualImg St-->
+        <div class="visualImg">
+          <div class="inerBg"></div>
+        </div>
+        <!--//visualImg Ed-->
+        <nav>
+          <ul class="naviFrame">
+            <li>
+              <a href="#a">HOME</a>
+            </li>
+            <li class="naviDire">네트워킹 라운지</li>
+            <!--ver07 수정-->
+            <li class="naviDire">
+              기후행동을 함께 할 다양한 분야의 사람들을 만나보세요.
+            </li>
+            <!--//ver07 수정-->
+          </ul>
+        </nav>
+        <!--contdiv St-->
+        <div class="contents">          
+          <!--contents St-->
+          <div class="contdiv">
+            <div class="titleBox">
+              <h2>기후행동을 함께 할 다양한 분야의 사람들을 만나보세요.</h2>
+              <!--<div class="memberRegcopy">
+                이곳은 P4G 파트너십 참여주체의 기후변화 대응 관련 정책,
+                프로그램, 비즈니스, 연구개발, 캠페인 등을 소개하고 홍보하는
+                공간입니다.
+              </div>//-->
+            </div>
+            <div class="tabInner">
+              <!--수정ver01-->
+              <div class="copyrightBoxmobile">ⓒPark SangHoon</div>
+              <!--//수정ver01-->
+              <!--네트워킹 라운지 St-->
+              <div>
+                <div class="titdeHead">
+                  관심사가 같은 참가자들을 확인해보세요.
+                </div>
+                <!--search St-->
+                <div class="dataField">
+                  <!--ver07 수정-->
+                  <div class="neworksearchtop">
+                    <!--//ver07 수정-->
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check01" />
+                      <label for="check01">전체</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check02" />
+                      <label for="check02">식량농업</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check03" />
+                      <label for="check03">물</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check04" />
+                      <label for="check04">에너지</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check05" />
+                      <label for="check05">도시</label>
+                    </span>
+                    <span class="checkBox"
+                      ><input type="checkbox" id="check06" />
+                      <label for="check06">순환경제</label>
+                    </span>
+                  </div>
+                  <div class="netentry">
+                    <div class="firBox">
+                      <select class="mem block">
+                        <option>국가</option>
+                      </select>
+                    </div>
+                    <div class="secondBox">
+                      <select class="mem block">
+                        <option>소속 구분</option>
+                      </select>
+                    </div>
+                    <div class="thirddBox">
+                      <input
+                        type="text"
+                        class="mem block"
+                        placeholder="네트워킹 참가자의 소속 기관명 또는 성명을 입력해 주세요"
+                      />
+                    </div>
+                    <div class="onebutton">
+                      <button type="button" class="myiactive_btn">검색</button>
+                    </div>
+                  </div>
+                </div>
+                <!--//search Ed-->
+                <!--pc리스트 St-->
+                <div class="mypage_pclist boardlist">
+                  <div class="favoriteManlist">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon01.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>홍길동</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>이즈피엠피 차장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <button type="button" class="myiactivedel_btn">
+                        DELETE
+                      </button>
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                      <div class="snsConect">
+                        <span class="closeBtn clost"
+                          ><img
+                            src="../asset/images/sub/sns_close.svg"
+                            alt="닫기"
+                        /></span>
+                        <div class="snsBoxdiv">
+                          <!--<p>
+                            P4G 참가자들과 녹색회복에 대해<br />이야기
+                            나눠보세요!
+                          </p>//-->
+                          <!--ver08 수정-->
+                          <a href="#a" class="snsicoimg01" title="twiter"
+                            >twiter</a
+                          >
+                          <a href="#a" class="snsicoimg02" title="facebook"
+                            >twiter</a
+                          >
+                          <a href="#a" class="snsicoimg03" title="instgram"
+                            >twiter</a
+                          >
+                          <a href="#a" class="snsicoimg04" title="in_icon"
+                            >twiter</a
+                          >
+                          <!--//ver08 수정-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+										<!--ver14 수정-->
+                    <div class="favorite_cont">
+                      <div class="fircon engcon"><span>side event</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon engcon"><span>side event</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon engcon"><span>side event</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+										<!--//ver14 수정-->
+                  </div>
+                  <div class="favoriteManlist second">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon02.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>Leonardo DiCaprio Leonardo</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>2021p4g 정상회의 기획단 단장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <!--ver04 수정-->
+                      <button type="button" class="favorite_btn activebtn">
+                        FAVORITE
+                      </button>
+                      <!--//ver04 수정-->
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="favoriteManlist second">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon03.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>홍길동</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>이즈피엠피 차장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <button type="button" class="favorite_btn">
+                        FAVORITE
+                      </button>
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="favoriteManlist second">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon04.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>Leonardo DiCaprio Leonardo</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>2021p4g 정상회의 기획단 단장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <button type="button" class="favorite_btn">
+                        FAVORITE
+                      </button>
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="favoriteManlist second">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon05.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>홍길동</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>이즈피엠피 차장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <button type="button" class="favorite_btn">
+                        FAVORITE
+                      </button>
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="favoriteManlist second">
+                    <div class="firDiv">
+                      <span
+                        ><img
+                          src="../asset/images/sub/p4g_icon06.svg"
+                          alt="p4g"
+                      /></span>
+                    </div>
+                    <div class="seconDiv">
+                      <h3>Leonardo DiCaprio Leonardo</h3>
+                      <p>Republic of Korea</p>
+                    </div>
+                    <div class="treeDiv">
+                      <h3>2021p4g 정상회의 기획단 단장</h3>
+                      <p>언론 및 미디어</p>
+                    </div>
+                    <div class="lastDiv">
+                      <button type="button" class="favorite_btn">
+                        FAVORITE
+                      </button>
+                      <button type="button" class="myiactiveconnect_btn">
+                        CONNECT
+                      </button>
+                    </div>
+                  </div>
+                  <div class="favoriteManlistmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div>글로벌 탄소중립을 위한 지방정부의 역할</div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                </div>
+                <!--//pc리스트 Ed-->
+                <!--모바일 리스트 St-->
+                <div class="mypage_mobilelist">
+                  <div class="mobile-listframe-type02 first-child">
+                    <div>
+                      <img src="../asset/images/sub/p4g_icon01.svg" alt="p4g" />
+                    </div>
+                    <div class="flextdtype02">
+                      <div><strong>홍길동</strong></div>
+                      <div>Republic of Korea</div>
+                      <div><strong>이즈피엠피 차장</strong></div>
+                      <div>언론 및 미디어</div>
+                    </div>
+                    <div class="type02">
+                      <div>
+                        <button type="button" class="myiactivedel_btn">
+                          DELETE
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class="myiactiveconnect_btn"
+                          onclick="callPop('#snsPop')"
+                        >
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+									<!--//ver14 수정-->
+                  <div class="mobile-listframe-type02more">
+                    <div class="favorite_cont engcont">
+                      <div class="fircon engcon"><span>부대행사</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont engcont">
+                      <div class="fircon engcon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont engcont">
+                      <div class="fircon engcon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02">
+                    <div>
+                      <img src="../asset/images/sub/p4g_icon01.svg" alt="p4g" />
+                    </div>
+                    <div class="flextdtype02">
+                      <div><strong>홍길동</strong></div>
+                      <div>Republic of Korea</div>
+                      <div><strong>이즈피엠피 차장</strong></div>
+                      <div>언론 및 미디어</div>
+                    </div>
+                    <div class="type02">
+                      <div>
+                        <button type="button" class="favorite_btn">
+                          FAVORITE
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class="myiactiveconnect_btn"
+                          onclick="callPop('#snsPop')"
+                        >
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02more">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02">
+                    <div>
+                      <img src="../asset/images/sub/p4g_icon02.svg" alt="p4g" />
+                    </div>
+                    <div class="flextdtype02">
+                      <div>
+                        <strong
+                          >Leonardo DiCaprio Leonardo DiCapri oprio</strong
+                        >
+                      </div>
+                      <div>Republic of Korea</div>
+                      <div><strong>이즈피엠피 차장</strong></div>
+                      <div>언론 및 미디어</div>
+                    </div>
+                    <div class="type02">
+                      <div>
+                        <button type="button" class="favorite_btn">
+                          FAVORITE
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class="myiactiveconnect_btn"
+                          onclick="callPop('#snsPop')"
+                        >
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02more">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02 last-child">
+                    <div>
+                      <img src="../asset/images/sub/p4g_icon03.svg" alt="p4g" />
+                    </div>
+                    <div class="flextdtype02">
+                      <div><strong>홍길동</strong></div>
+                      <div>Republic of Korea</div>
+                      <div><strong>이즈피엠피 차장</strong></div>
+                      <div>언론 및 미디어</div>
+                    </div>
+                    <div class="type02">
+                      <div>
+                        <button type="button" class="favorite_btn">
+                          FAVORITE
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class="myiactiveconnect_btn"
+                          onclick="callPop('#snsPop')"
+                        >
+                          CONNECT
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-listframe-type02more lastmore">
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                    <div class="favorite_cont">
+                      <div class="fircon"><span>의견</span></div>
+                      <div class="mobiletxtc">
+                        글로벌 탄소중립을 위한 지방정부의 역할
+                      </div>
+                      <div class="more"><span></span>더보기</div>
+                    </div>
+                  </div>
+                </div>
+                <!--//모바일 리스트 Ed-->
+              </div>
+              <!--//네트워킹 라운지 Ed-->
+            </div>
+          </div>
+          <!--//contdiv Ed-->
+        </div>
+        <!--//contents Ed-->
+        <div class="copyrightpc">ⓒPark SangHoon</div>
+      </section>
+      <!---//container Ed-->
+      <!--footer St-->
+      <footer>
+        <div class="footInner">
+          <!--ver04 수정-->
+          <div class="footMenu footmobile">
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_left">
+            <p>2021 P4G Seoul Summit</p>
+            <p class="last-child">
+              Copyrights (c) 2021 P4G Seoul Summit. All rights reserved.
+            </p>
+            <div class="mobileemail">E-mail: 2021p4g.info@gmail.com</div>
+          </div>
+          <div class="footMenu footpc">
+            <div class="pcemail">E-mail: 2021p4g.info@gmail.com</div>
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <!--//ver04 수정-->
+          <div class="snsMenu">
+            <span class="mobile_footlogo"></span>
+            <ul>
+              <li class="sns01">
+                <a href="#a">P4G</a>
+              </li>
+              <li class="sns02">
+                <a href="#a">facebook</a>
+              </li>
+              <li class="sns03">
+                <a href="#a">instagram</a>
+              </li>
+              <li class="sns04">
+                <a href="#a">utube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--//footer Ed-->
+    </div>
+    <!--//wrap Ed-->
+    <!--GOTO St-->
+    <a
+      href="#header"
+      class="go_top"
+      title="위로가기"
+      style="display: block"
+    ></a>
+    <!--//GOTO Ed-->
+    <script type="text/javascript" src="../asset/js/content.js"></script>
+    <script>
+      $(".myiactiveconnect_btn").click(function () {
+        $(".snsConect").addClass("active");
+      });
+      $(".clost").click(function () {
+        $(".snsConect").removeClass("active");
+      });
+    </script>
+    <!--snsdPop-->
+    <div class="popup" id="snsPop">
+      <div class="pop-con">
+        <div class="snsPop">
+          <a href="#none" class="close b-close"
+            ><img src="../asset/images/sub/sns_close.svg" alt="닫기"
+          /></a>
+          <div class="snsBoxdiv">
+            <!--<p>P4G 참가자들과 녹색회복에 대해<br />이야기 나눠보세요!</p>//-->
+            <!--ver08 수정-->
+            <a href="#a" class="snsicoimg01" title="twiter">twiter</a>
+            <a href="#a" class="snsicoimg02" title="facebook">facebook</a>
+            <a href="#a" class="snsicoimg03" title="instgram">instgram</a>
+            <a href="#a" class="snsicoimg04" title="in_icon">in</a>
+            <!--//ver08 수정-->
+            <!--
+              <a href="#a"><img src="../asset/images/sub/twiter_icon_off.svg" alt="twiter"></a><a href="#a"><img src="../asset/images/sub/facebook_icon_off.svg" alt="facebook"></a><a href="#a"><img src="../asset/images/sub/instgram_icon_off.svg" alt="instgram"></a><a href="#a"><img src="../asset/images/sub/in_icon_off.svg" alt="in_icon"></a>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//snsdPop-->
+  </body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <title>P4G 마이페이지</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
+    <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/pointer-events-polyfill.js"
+    ></script>
+    <script type="text/javascript" src="../asset/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="../asset/js/jquery.nicescroll.min.js"
+    ></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]> <script
+        src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script.
+        src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+  </head>
+
+  <body id="mypage">
+    <!--wrap St-->
+    <div id="wrap">
+      <!--container St-->
+      <section id="container">
+        <div class="biColor">
+          <div class="sbg01"></div>
+          <div class="sbg02"></div>
+          <div class="sbg03"></div>
+          <div class="sbg04"></div>
+        </div>
+        <!--header St-->
+        <header class="header">
+          <h1>
+            <a href="../asset/html/main/main.html">2021 P4G Summit Seoul</a>
+          </h1>
+
+          <ul class="utillBox">
+            <li>
+              <a href="#a">LOGIN</a>
+            </li>
+            <li>
+              <a href="#a">JOIN</a>
+            </li>
+            <li class="language">
+              <a href="#a">ENG</a>
+              <div class="language_panel" style="display: none">
+                <ul class="language_list">
+                  <li class="active">
+                    <a href="../asset/html/index_eng.html">ENG</a>
+                  </li>
+                  <li>
+                    <a href="../asset/html/index_eng.html">KOR</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <a href="#a" class="allMenu">MENU</a>
+        </header>
+        <!--//header Ed-->
+        <!--visualImg St-->
+        <div class="visualImg">
+          <div class="inerBg"></div>
+        </div>
+        <!--//visualImg Ed-->
+        <nav>
+          <ul class="naviFrame">
+            <li>
+              <a href="#a">HOME</a>
+            </li>
+            <li class="naviDire">마이페이지</li>
+          </ul>
+        </nav>
+        <!--contdiv St-->
+        <div class="contents">         
+          <!--contents St-->
+          <div class="contdiv">
+            <div class="titleBox">
+              <h2>마이페이지</h2>
+            </div>
+            <!--탭메뉴 St-->
+            <ul class="tabMenu">
+              <li>
+                <a href="#a" class="active"><span>My P4G</span></a>
+              </li>
+              <li><a href="#a">활동내역</a></li>
+            </ul>
+            <!--//탭메뉴 Ed-->
+            <div class="tabInner">
+              <!--mypage St-->
+              <div>
+                <div class="myInfo">
+                  <span class="photoImg"
+                    ><img src="../asset/images/sub/photo01.png" alt="사진"
+                  /></span>
+                  <div class="nation">대한민국</div>
+                  <div class="myName">Leonardo DiCaprio</div>
+                  <ul>
+                    <li><span>2021 P4G 정상회의준비 기획단 단장</span></li>
+                    <li><i>남 (30대)</i><i>학사졸업</i></li>
+                    <li><span>P4G2021@hanmail.net</span></li>
+                  </ul>
+                  <dl>
+                    <dt>닉네임</dt>
+                    <dd>길동님</dd>
+                  </dl>
+                </div>
+                <div class="myInfobtn">
+                  <a href="#a" class="myinfo_btn">회원정보 수정</a>
+                </div>
+                <!--pc리스트 St-->
+                <div class="mypage_pclist">
+                  <!--시청세션 St-->
+                  <div class="slideHead">
+                    시청하신 세션을 확인해보세요.<span
+                      ><img
+                        src="../asset/images/sub/vod_live_icon.svg"
+                        alt="live"
+                      /><em class="livetxt">LIVE</em
+                      ><img src="../asset/images/sub/vod.svg" alt="vod" /><em
+                        >VOD</em
+                      ></span
+                    >
+                  </div>
+                  <div class="contentMore" style="display: block">
+                    <div class="list_table_head">
+                      <div class="listday">일</div>
+                      <div class="listtime">시간(KST)</div>
+                      <div class="lisdivide">구분</div>
+                      <div class="listsubject">주제</div>
+                      <div class="listsessionTitle">세션제목</div>
+                      <div class="orgnation">주관부처</div>
+                      <div class="button">보기</div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod_live_icon.svg"
+                            alt="live"
+                        /></a>
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod_live_icon.svg"
+                            alt="live"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                        <!--
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img src="../asset/images/sub/vod.svg" alt="vod"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img src="../asset/images/sub/vod.svg" alt="vod"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="nodata">
+                        ‘홍길동’ 님 께서 시청하신 세션이 없습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--시청세션 Ed-->
+                  <!--즐겨찾기 St-->
+                  <div class="slideHead mttop">
+                    즐겨찾기 하신 세션을 확인해보세요.<span
+                      ><img
+                        src="../asset/images/sub/vod_live_icon.svg"
+                        alt="live"
+                      /><em class="livetxt">LIVE</em
+                      ><img src="../asset/images/sub/vod.svg" alt="vod" /><em
+                        >VOD</em
+                      ></span
+                    >
+                  </div>
+                  <div class="contentMore" style="display: block">
+                    <div class="list_table_head">
+                      <div class="listday">일</div>
+                      <div class="listtime">시간(KST)</div>
+                      <div class="lisdivide">구분</div>
+                      <div class="listsubject">주제</div>
+                      <div class="listsessionTitle">세션제목</div>
+                      <div class="orgnation">주관부처</div>
+                      <div class="button">보기</div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod_live_icon.svg"
+                            alt="live"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img src="../asset/images/sub/vod.svg" alt="live"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img src="../asset/images/sub/vod_end.svg" alt="vod"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="listday">2021.05.24</div>
+                      <div class="listtime">
+                        <span>10:00</span>~<span>11:00</span>
+                      </div>
+                      <div class="lisdivide">특별세션</div>
+                      <div class="listsubject">탄소중립실천</div>
+                      <div class="listsessionTitle">
+                        <a href="#a"
+                          >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할</a
+                        >
+                      </div>
+                      <div class="orgnation">과학기술 정보통신부</div>
+                      <div class="button">
+                        <a href="#a"
+                          ><img src="../asset/images/sub/vod.svg" alt="vod"
+                        /></a>
+                        <!--수정ver01-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                        /></a>
+                        <!--//수정ver01-->
+                      </div>
+                    </div>
+                    <div class="list_table_head body">
+                      <div class="nodata">
+                        <p>‘홍길동’ 님 께서 선택하신 세션이 없습니다.</p>
+                        관심있는 세션에 FAVORITE을 누르시면 목록이 생성됩니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--//즐겨찾기 Ed-->
+                </div>
+                <!--//pc리스트 Ed-->
+                <!--모바일 리스트 St-->
+                <div class="mypage_mobilelist">
+                  <!--시청세션 St-->
+                  <div class="slideHead">시청하신 세션을 확인해보세요.</div>
+                  <div class="contentMore mobileDiv" style="display: block">
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"><strong>10:00 ~ 11:00</strong></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">특별세션</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          <a href="#a"
+                            >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                            탄소중립을 위한 지방정부의 역할</a
+                          >
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod_live-mobile.svg"
+                            alt="vod"
+                          /><span class="liveTxt">LIVE 보기</span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"><strong>10:00 ~ 11:00</strong></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">특별세션</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          <a href="#a"
+                            >글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                            탄소중립을 위한 지방정부의 역할</a
+                          >
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod-mobile.svg"
+                            alt="vod"
+                          /><span>VOD 보기</span></a
+                        >
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="nodata">
+                        ‘홍길동’ 님 께서 시청하신 세션이 없습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--//시청세션 Ed-->
+                  <!--즐겨찾기세션 St-->
+                  <div class="slideHead mobilettop">
+                    즐겨찾기 세션을 확인해보세요.<span
+                      ><img
+                        src="../asset/images/sub/vod_live_icon.svg"
+                        alt="live"
+                      /><em class="livetxt">LIVE</em
+                      ><img src="../asset/images/sub/vod.svg" alt="vod" /><em
+                        >VOD</em
+                      ></span
+                    >
+                  </div>
+                  <div class="contentMore mobileDiv" style="display: block">
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"><strong>10:00 ~ 11:00</strong></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">특별세션</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod_live-mobile.svg"
+                            alt="vod"
+                          /><span class="liveTxt">LIVE 보기</span></a
+                        >
+                        <!--수정ver03-->
+                        <a href="#a" class="deleteimg"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                          /><span class="deleteTxt">삭제</span></a
+                        >
+                        <!--//수정ver03-->
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"><strong>10:00 ~ 11:00</strong></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">특별세션</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/vod-mobile.svg"
+                            alt="vod"
+                          /><span>VOD 보기</span></a
+                        >
+                        <!--수정ver03-->
+                        <a href="#a" class="deleteimg"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                          /><span class="deleteTxt">삭제</span></a
+                        >
+                        <!--//수정ver03-->
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="mobile-listframe">
+                        <div><strong>2021.05.24</strong></div>
+                        <div class="flextd"><strong>10:00 ~ 11:00</strong></div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">구분</div>
+                        <div class="flextd">특별세션</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주제</div>
+                        <div class="flextd">탄소중립실천</div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">세션제목</div>
+                        <div class="flextd">
+                          글로벌 탄소중립을 위한 지방정부의 역할 글로벌
+                          탄소중립을 위한 지방정부의 역할
+                        </div>
+                      </div>
+                      <div class="mobile-listframe flexBody">
+                        <div class="title">주관부처</div>
+                        <div class="flextd">과학기술 정보통신부</div>
+                      </div>
+                      <div class="mobile-listButtonframe">
+                        <!--수정ver03-->
+                        <a href="#a"
+                          ><img
+                            src="../asset/images/sub/close-mobile.svg"
+                            alt="vod"
+                          /><span>CLOSE</span></a
+                        >
+                        <a href="#a" class="deleteimg"
+                          ><img
+                            src="../asset/images/sub/mypage_delete.svg"
+                            alt="삭제"
+                          /><span class="deleteTxt">삭제</span></a
+                        >
+                        <!--//수정ver03-->
+                      </div>
+                    </div>
+                    <div class="mobile-listBody">
+                      <div class="nodata">
+                        <p>‘홍길동’ 님 께서 선택하신 세션이 없습니다.</p>
+                        관심있는 세션에 FAVORITE을 누르시면 목록이 생성됩니다.
+                      </div>
+                    </div>
+                  </div>
+                  <!--//즐겨찾기세션 Ed-->
+                </div>
+                <!--//모바일 리스트 Ed-->
+              </div>
+              <!--//mypage Ed-->
+            </div>
+          </div>
+          <!--//contdiv Ed-->
+        </div>
+        <!--//contents Ed-->
+      </section>
+      <!---//container Ed-->
+      <!--footer St-->
+      <footer>
+        <div class="footInner">
+          <!--ver04 수정-->
+          <div class="footMenu footmobile">
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+              <span></span>
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_left">
+            <p>2021 P4G Seoul Summit</p>
+            <p class="last-child">
+              Copyrights (c) 2021 P4G Seoul Summit. All rights reserved.
+            </p>
+            <div class="mobileemail">E-mail: 2021p4g.info@gmail.com</div>
+          </div>
+          <div class="footMenu footpc">
+            <div class="pcemail">E-mail: 2021p4g.info@gmail.com</div>
+            <ul>
+              <li>
+                <a href="#a">이용약관</a>
+              </li>
+
+              <li>
+                <a href="#a">개인정보처리방침</a>
+              </li>
+
+              <li>
+                <a href="#a">이메일무단수집거부</a>
+              </li>
+            </ul>
+          </div>
+          <!--//ver04 수정-->
+          <div class="snsMenu">
+            <span class="mobile_footlogo"></span>
+            <ul>
+              <li class="sns01">
+                <a href="#a">P4G</a>
+              </li>
+              <li class="sns02">
+                <a href="#a">facebook</a>
+              </li>
+              <li class="sns03">
+                <a href="#a">instagram</a>
+              </li>
+              <li class="sns04">
+                <a href="#a">utube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--//footer Ed-->
+      <!--allmenu St-->
+      <div class="allMenuwraper">
+        <div class="allmenu-container">
+          <div class="all_toputill">
+            <ul class="utillBox">
+              <li>
+                <a href="#a">LOGIN</a>
+              </li>
+              <li>
+                <a href="#a">JOIN</a>
+              </li>
+              <li class="language">
+                <a href="#a">ENG</a>
+                <div class="language_panel fixedshow" style="display: none">
+                  <ul class="language_list">
+                    <li class="active">
+                      <a href="../asset/html/index_eng.html">ENG</a>
+                    </li>
+                    <li>
+                      <a href="../asset/html/index_eng.html">KOR</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <a href="#a" class="allMenu allshow">닫기</a>
+            <div class="allmenusns_pc">
+              <a href="#a"
+                ><img src="../asset/images/common/p4g.svg" alt="p4g" /></a
+              ><a href="#a"
+                ><img src="../asset/images/common/p4g.svg" alt="facebook"
+              /></a>
+              <a href="#a"
+                ><img src="../asset/images/common/p4g.svg" alt="instargram"
+              /></a>
+              <a href="#a"
+                ><img src="../asset/images/common/p4g.svg" alt="utobe"
+              /></a>
+            </div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu">
+              <span class="alllist_menuframeline"
+                ><i class="first"></i><i class="secondst"></i></span
+              ><a href="#a">Program</a>
+            </div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu"><a href="#a">Main Events</a></div>
+            <div class="twodepthMenu">
+              <div><a href="#a">Sessions</a></div>
+              <div><a href="#a">Leaders</a></div>
+            </div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu">
+              <a href="#a">Green Future Sessions</a>
+            </div>
+            <div class="twodepthMenu">
+              <div><a href="#a">Sessions</a></div>
+              <div><a href="#a">Speakers</a></div>
+            </div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu">
+              <a href="#a">P4G Thematic Sessions</a>
+            </div>
+            <div class="twodepthMenu">
+              <div><a href="#a">Sessions</a></div>
+              <div><a href="#a">Speakers</a></div>
+            </div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu"><a href="#a">Networking Lounge</a></div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu"><a href="#a">Media Gallery</a></div>
+          </div>
+          <div class="alllist_menuframe">
+            <div class="onedepthMenu"><a href="#a">Info Desk</a></div>
+            <div class="twodepthMenu">
+              <div><a href="#a">Notice</a></div>
+              <div><a href="#a">FAQ</a></div>
+            </div>
+          </div>
+          <div class="allmenusns_mobile">
+            <a href="#a"
+              ><img src="../asset/images/common/p4g.svg" alt="p4g" /></a
+            ><a href="#a"
+              ><img src="../asset/images/common/p4g.svg" alt="facebook"
+            /></a>
+            <a href="#a"
+              ><img src="../asset/images/common/p4g.svg" alt="instargram"
+            /></a>
+            <a href="#a"
+              ><img src="../asset/images/common/p4g.svg" alt="utobe"
+            /></a>
+          </div>
+        </div>
+        <div class="bgframe">
+          <div class="all_cipytxt">
+            <p>Partnering for Green</p>
+            <p>Growth and the Global</p>
+            <p>Goals 2030</p>
+          </div>
+        </div>
+      </div>
+      <div class="aside_dim"></div>
+      <!--allmenu Ed-->
+    </div>
+    <!--//wrap Ed-->
+    <!--GOTO St-->
+    <a
+      href="#header"
+      class="go_top"
+      title="위로가기"
+      style="display: block"
+    ></a>
+    <!--//GOTO Ed-->
+    <script type="text/javascript" src="../asset/js/content.js"></script>
+  </body>
+</html>
